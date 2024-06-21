@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -16,19 +17,19 @@
           <h1 class="main__form--title">Регистрация</h1>
           <div class="main__form--block">
             <p class="main__form--block-answer">Уже есть аккаунт?</p>
-            <a href="" class="main__form--block-link">Войти</a>
+            <a href="#" class="main__form--block-link">Войти</a>
           </div>
           <div class="main__form--input">
-            <input type="text" name="company" placeholder="Моя компания">
+            <input class="form-input" type="text" name="company" placeholder="Моя компания">
             <div class="main__form--full-name">
-              <input type="text" name="name" placeholder="Имя">
-              <input type="text" name="surname" placeholder="Фамилия">
+              <input class="form-input form-name" type="text" name="name" placeholder="Имя" required >
+              <input class="form-input form-surname" type="text" name="surname" placeholder="Фамилия" required >
             </div>
-            <input type="email" name="email" placeholder="E-mail" required >
-            <button type="submit" name="submit">Зарегистрироваться</button>
+            <input class="form-input" type="email" name="email" placeholder="E-mail" required >
+            <button class="btn" type="submit" name="submit">Зарегистрироваться</button>
             <div class="main__form--agreement">
               <label class="checkbox-label">
-                <input type="checkbox" name="checkbox" id="checkbox">
+                <input class="checkbox" type="checkbox" name="checkbox" id="checkbox">
                 Я прочитал и принимаю
               </label>
               <a href="#" class="main__form--terms">Условия использования</a>
