@@ -12,34 +12,35 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__logo">
-        <div class="header__logo--wrapper">B</div>
-        <h3 class="header__logo--title">Мой блог</h3>
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="#" class="header__logo--title"><span class="header__logo-icon">B</span>Мой блог</a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav--list">
+            <li class="header__nav--item">
+              <a class="nav-link" href="#">HTML и CSS</a>
+            </li>
+            <li class="header__nav--item">
+              <a class="nav-link" href="#">Frontend</a>
+            </li>
+            <li class="header__nav--item">
+              <a class="nav-link" href="#">Backend</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="#">
+          <label class="search-label" for="search">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.1">
+              <path d="M6.66667 11.3333C9.244 11.3333 11.3333 9.244 11.3333 6.66667C11.3333 4.08934 9.244 2 6.66667 2C4.08934 2 2 4.08934 2 6.66667C2 9.244 4.08934 11.3333 6.66667 11.3333Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.25 12.25L9.71249 9.71246" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </label>
+          <input class="blog-search" type="search" name="search" id="search" placeholder="Поиск">
+        </form>
       </div>
-      <nav class="header__nav">
-        <ul class="header__nav--list">
-          <li class="header__nav--item">
-            <a class="nav-link" href="#">HTML и CSS</a>
-          </li>
-          <li class="header__nav--item">
-            <a class="nav-link" href="#">Frontend</a>
-          </li>
-          <li class="header__nav--item">
-            <a class="nav-link" href="#">Backend</a>
-          </li>
-        </ul>
-      </nav>
-      <form action="#">
-        <label class="search-label" for="search">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.1">
-            <path d="M6.66667 11.3333C9.244 11.3333 11.3333 9.244 11.3333 6.66667C11.3333 4.08934 9.244 2 6.66667 2C4.08934 2 2 4.08934 2 6.66667C2 9.244 4.08934 11.3333 6.66667 11.3333Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M12.25 12.25L9.71249 9.71246" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </g>
-          </svg>
-        </label>
-        <input class="blog-search" type="search" name="search" id="search" placeholder="Поиск">
-      </form>
     </div>
   </header>
   <main class="main">
@@ -50,24 +51,24 @@
           <span class="blog__task--bull">&bull;</span>
           <p class="blog__task--date">12 мая 2024</p>
         </div>
-        <h2 class="blog__title">Теория цвета - Как цвет влияет на поведение<br> потребителей</h2>
+        <h1 class="blog__title">Теория цвета - Как цвет влияет на поведение<br> потребителей</h1>
         <div class="blog__user">
           <div class="blog__user--avatar">
             <img src="./assets/images/avatar1.png" alt="фото Наталья Васильева">
           </div>
           <div class="blog__user--info">
-            <h3 class="blog__user--name">Наталья Васильева</h3>
+            <h2 class="blog__user--name">Наталья Васильева</h2>
             <p class="blog__user--type">Разработчик</p>
           </div>
         </div>
         <div class="blog__hero">
           <img src="./assets/images/hero-bg.png" alt="изображение монитора с системным блоком">
         </div>
-        <div class="blog__text">
+        <article class="blog__text">
           <p class="blog__text--block">Теория цвета — это особенности эмоционального восприятия человеком тех или иных цветовых решений. Цвета и различные их комбинации влияют на психику человека, а значит, во многом определяют его поведение. Маркетологи и веб-дизайнеры хорошо знают, что правильно подобранная цветовая гамма сайта помогает привлечь и удержать внимание пользователей, сформировать положительное отношение к продукту, подтолкнуть посетителей к совершению целевых действий, повысить конверсию.</p>
           <p class="blog__text--block">Теория цвета — это особенности эмоционального восприятия человеком тех или иных цветовых решений. Цвета и различные их комбинации влияют на психику человека, а значит, во многом определяют его поведение. Маркетологи и веб-дизайнеры хорошо знают, что правильно подобранная цветовая гамма сайта помогает привлечь и удержать внимание пользователей, сформировать положительное отношение к продукту, подтолкнуть посетителей к совершению целевых действий, повысить конверсию.</p>
           <p class="blog__text--block">В исследовании «Влияние цвета на маркетинг» (Impact of color on marketing) говорится, что использование разных цветов может существенно влиять на настроение и поведение потребителей. Утверждается, что от 60 до 90% покупателей (в зависимости от категории продукта) дают положительную или отрицательную оценку товару, основываясь только на его цвете.</p>
-        </div>
+        </article>
       </div>
     </section>
   </main>
