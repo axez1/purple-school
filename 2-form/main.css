@@ -77,6 +77,7 @@ h1 {
 .container {
   max-width: 1440px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .main__form--wrapper {
@@ -84,7 +85,12 @@ h1 {
   border-radius: var(--form-radius);
   max-width: 582px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   height: auto;
+  margin: 7% auto;
 }
 
 .main__form--title {
@@ -93,6 +99,9 @@ h1 {
 }
 
 .main__form--block {
+  display: flex;
+  text-align: center;
+  gap: 15px;
   margin-bottom: 47px;
 }
 
@@ -112,6 +121,17 @@ h1 {
   color: var(--hover);
 }
 
+.main__form--full-name {
+  display: flex;
+  gap: 2px;
+  flex: 1;
+}
+
+.main__form--full-name .form-input {
+  max-width: 195px;
+  width: 100%;
+}
+
 .form-input {
   max-width: 394px;
   width: 100%;
@@ -120,7 +140,7 @@ h1 {
   border-radius: var(--input-radius);
   color: var(--color-h3);
   font-weight: var(--fw-600);
-  padding-left: 11px;
+  padding: 0 11px;
   margin-bottom: 21px;
 }
 
@@ -168,6 +188,8 @@ input:focus-visible::placeholder {
 }
 
 .main__form--agreement {
+  display: flex;
+  gap: 10px;
   padding-bottom: 91px;
 }
 
@@ -175,6 +197,7 @@ input:focus-visible::placeholder {
   color: var(--color-label);
   font-weight: var(--fw-400);
   font-size: 14px;
+  cursor: pointer;
 }
 
 .main__form--terms {
